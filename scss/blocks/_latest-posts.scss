@@ -1,0 +1,85 @@
+.entry-content {
+	.wp-block-latest-posts {
+		&.alignfull:not(.is-grid) {
+			padding-left: 20px;
+		}
+
+		&.alignwide {
+			@include blockWideDisplay();
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&.is-grid {
+			@include blockMobileDisplay();
+			margin-bottom: calc(1.8em - 16px);
+			margin-top: 1.8em;
+
+			&.alignwide {
+				@include blockWideDisplay();
+			}
+
+			&.alignfull {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			li {
+				align-items: center;
+				background: $color--background-pre;
+				border: none;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				line-height: 1.6;
+				padding: 1em 1em 1.1em;
+				text-align: center;
+
+				@media (max-width: 599px) {
+					margin-right: 0;
+				}
+
+				a {
+					box-shadow: none;
+
+					&:hover {
+						opacity: 0.6;
+					}
+
+					&::after {
+						content: "";
+					}
+				}
+
+				&:last-child {
+					a::after {
+						content: "";
+					}
+				}
+			}
+
+			.wp-block-latest-posts__post-date {
+				flex: 0 0 auto;
+				margin-top: 10px;
+			}
+		}
+
+		&:not(.is-grid) {
+			margin-top: -5px;
+		}
+
+		&:not(.is-grid) li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__post-date {
+			color: $gray;
+			@include font-size(15px);
+			margin-top: -4px;
+		}
+	}
+}

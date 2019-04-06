@@ -1,0 +1,122 @@
+.entry-content {
+	.wp-block-pullquote {
+		@include blockMobileDisplay();
+		border: none;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		text-align: center;
+
+		&.alignwide {
+			@include blockWideDisplay();
+		}
+
+		&.alignfull {
+			padding-left: 20px;
+			padding-right: 20px;
+
+			p,
+			cite {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: $content__width--wide;
+			}
+		}
+
+		blockquote {
+			border: none !important;
+			margin: 0;
+			max-width: none;
+			padding: 0 !important;
+			text-align: center;
+
+			p {
+				margin-bottom: 0;
+			}
+
+			&:not([class*="text-color"]) {
+				color: $color__text-main;
+
+				cite {
+					color: $gray;
+				}
+			}
+		}
+
+		p {
+			font-size: $font__size-mdlrg;
+			font-weight: 300;
+			line-height: 1.3;
+			margin-bottom: 0;
+			margin-top: 0;
+
+			em {
+				font-style: normal;
+			}
+		}
+
+		cite {
+			display: inline-block;
+			font-size: 18px;
+			line-height: 1.6;
+			margin-top: 0.55em;
+			text-transform: none;
+		}
+
+		&.alignleft,
+		&.alignright {
+			padding: 0;
+
+			@media screen and (min-width: $content__align--mobile-media-query--min) {
+				margin-bottom: 1.75em;
+				margin-top: 0.65em;
+			}
+
+			blockquote {
+				margin-left: 0;
+				max-width: 100%;
+				padding: 0;
+				text-align: left;
+			}
+		}
+
+		&.is-style-solid-color {
+			padding: 1.4em 1.5em 1.3em;
+
+			&.alignleft,
+			&.alignright {
+				@media screen and (min-width: $content__align--mobile-media-query--min) {
+					margin-bottom: 0.65em;
+					margin-top: 0.5em;
+					padding: 1em 1.25em;
+				}
+			}
+
+			p {
+				font-size: $font__size-mdlrg;
+				line-height: 1.3;
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			blockquote {
+				margin: 0 auto;
+				text-align: left;
+			}
+
+			cite {
+				opacity: 0.8;
+			}
+
+			&:not([class*="background-color"]) {
+				background-color: $black;
+			}
+
+			blockquote:not([class*="text-color"]),
+			blockquote:not([class*="text-color"]) cite,
+			blockquote:not([class*="text-color"]) a {
+				color: $white;
+			}
+		}
+	}
+}

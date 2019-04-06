@@ -1,0 +1,49 @@
+.entry-content {
+	blockquote,
+	.wp-block-quote {
+		&:not(.is-style-large) {
+			border-left: $block__quote--border-width solid $black;
+			padding-bottom: 0;
+			padding-left: 0.85em;
+			padding-top: 0;
+		}
+
+		p {
+			font-size: 1em;
+			font-style: normal;
+			font-weight: 300;
+
+			&:last-of-type {
+				margin-bottom: 0 !important;
+			}
+		}
+
+		cite {
+			font-size: $font__size-xs;
+			margin-top: 0.5em;
+		}
+
+		&.is-style-large {
+			border-left: none;
+			margin: $content__spacer auto;
+			padding-left: 50px;
+
+			@media screen and (min-width: $content__media-query) {
+				margin-bottom: $content__spacer + 12px;
+				margin-top: $content__spacer + 12px;
+				padding-left: 75px;
+			}
+
+			p:first-of-type {
+				font-size: $font__size-lg;
+				font-style: italic;
+				line-height: 1.4;
+			}
+
+			cite {
+				font-size: $font__size-sm;
+				text-align: inherit;
+			}
+		}
+	}
+}

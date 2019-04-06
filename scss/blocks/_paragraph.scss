@@ -1,0 +1,27 @@
+.entry-content {
+	.has-drop-cap {
+		&:not(:focus)::first-letter {
+			font-size: 68px;
+			font-weight: 600;
+			line-height: 1;
+			margin: 0 0.25em -3px 0;
+			padding-top: 7px;
+		}
+	}
+
+	p.has-background {
+		@include blockMobileDisplay();
+
+		margin-bottom: $content__spacer--mobile;
+		margin-top: $content__spacer--mobile;
+
+		@media screen and (min-width: $content__media-query) {
+			margin-bottom: $content__spacer + 12px;
+			margin-top: $content__spacer + 12px;
+		}
+
+		&:not(.has-text-color) {
+			color: $black;
+		}
+	}
+}

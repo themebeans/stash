@@ -1,0 +1,91 @@
+$font__body: "Roboto", sans-serif;
+$font__heading: $font__body;
+$font__figcaption: $font__heading;
+
+$font__size_base: 22px;
+$font__size-ratio: 1.125;
+
+$font__size-xxs: 1em / (1.5 * $font__size-ratio);
+$font__size-xs: 1em / (1.25 * $font__size-ratio);
+$font__size-sm: 1em / (1 * $font__size-ratio);
+$font__size-md: 1em * (1 * $font__size-ratio);
+$font__size-mdlrg: 1em * (1.25 * $font__size-ratio);
+$font__size-lg: 1em * (1.5 * $font__size-ratio);
+$font__size-xl: 1em * (2 * $font__size-ratio);
+$font__size-xxl: 1em * (2.5 * $font__size-ratio);
+$font__size-xxxl: 1em * (4 * $font__size-ratio);
+
+$font__line-height-body: 1.75;
+$font__line-height-pre: 1.6;
+
+$font__weight-body: 300;
+$font__weight-heading: 300;
+$font__line-height-heading: 1.4;
+
+$color__text-main: #333;
+$color__background-button: #333;
+$color__background-button-hover: #444;
+
+$color--has-background-color-fallback: #f5f5f5;
+
+// Links
+$color__link: #0073aa;
+$color__link-visited: #0073aa;
+$color__link-hover: darken($color__link, 10%);
+
+$white: #fff;
+$black: #333;
+$gray: #6c7781;
+
+$color--background-body: #fff;
+$color--background-screen: #f1f1f1;
+$color--background-hr: #ccc;
+$color--background-pre: #f1f1f1;
+$color--background-ins: #fff9c0;
+$color--background-input-focus: #fff;
+
+// Content variables
+$content__width: 700px;
+$content__width--wide: 960px;
+$content__padding: 20px;
+$content__width--less-padding: $content__width - ($content__padding * 2);
+$content__width--wide--less-padding: $content__width--wide - ($content__padding * 2);
+$content__media-query: $content__width - 1;
+$content__media-query--wide: $content__width--wide - 1;
+$content__align--leftright-margin: $content__width / 2 - $content__padding;
+$content__align--mobile-media-query--min: 499px;
+$content__align--mobile-media-query--max: $content__align--mobile-media-query--min - 1;
+$content__align--width: 300px;
+$content__spacer: 30px;
+$content__spacer--mobile: 20px;
+
+$block__quote--border-width: 3px;
+$block__quote--cite-font: $font__figcaption;
+
+// Editor variables
+$font__size-editor--small: 16px;
+$font__size-editor--medium: 22px;
+$font__size-editor--large: 26px;
+$font__size-editor--huge: 34px;
+
+@mixin blockMobileDisplay {
+	margin-left: $content__padding;
+	margin-right: $content__padding;
+	max-width: $content__width--less-padding;
+
+	@media screen and (min-width: $content__media-query) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@mixin blockWideDisplay {
+	margin-left: $content__padding;
+	margin-right: $content__padding;
+	max-width: $content__width--wide--less-padding;
+
+	@media screen and (min-width: $content__media-query--wide) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,159 @@
+.entry-content {
+	.wp-block-coblocks-alert {
+		@include blockMobileDisplay();
+		padding-bottom: 0.7em;
+		padding-top: 0.7em;
+
+		&:not(.has-custom-size) &__title {
+			font-size: $font__size-md;
+			font-weight: 300;
+		}
+
+		&:not(.has-custom-size) &__text {
+			font-size: $font__size-sm;
+			font-weight: 300;
+		}
+
+		&__text,
+		&__title {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		&__title {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	.wp-block-coblocks-accordion-item__title,
+	.wp-block-coblocks-accordion-item__text {
+		font-size: $font__size-sm;
+	}
+
+	.wp-block-coblocks-click-to-tweet {
+		border: none !important;
+		margin-bottom: $content__spacer--mobile + 10px;
+		margin-bottom: 1.7em;
+		padding-left: 0 !important;
+
+		@media screen and (min-width: $content__media-query) {
+			margin-bottom: $content__spacer + 10px;
+		}
+
+		&__text {
+			margin-bottom: 4px !important;
+		}
+
+		&__text::before {
+			top: 8px;
+		}
+
+		&__twitter-btn {
+			border-radius: 50px;
+			font-size: $font__size-xs;
+			height: 44px;
+			line-height: 45px;
+			margin-top: 0.75em;
+			padding: 0 1.4em;
+
+			@media (max-width: 700px) {
+				font-size: $font__size-sm;
+			}
+
+			&::before {
+				margin-right: 7px;
+			}
+		}
+	}
+
+	.wp-block-coblocks-author {
+		@include blockMobileDisplay();
+		padding-left: 30px;
+		padding-right: 30px;
+
+		&__name,
+		&__heading {
+			margin-bottom: 0 !important;
+		}
+
+		&__heading {
+			color: $gray;
+			font-size: $font__size-xs;
+		}
+
+		&__biography {
+			font-size: $font__size-sm;
+			margin-bottom: 1em !important;
+		}
+
+		&__name {
+			display: block;
+			margin: 0.25em 0 0.25em !important;
+		}
+
+		.wp-block-button {
+			margin-top: 0;
+		}
+	}
+
+	.wp-block-coblocks-dynamic-separator {
+		@include blockMobileDisplay();
+		max-width: $content__width - ($content__padding * 4);
+
+		@media screen and (max-width: $content__width) {
+			padding-left: 0;
+			padding-right: 0;
+			width: calc(100% - #{$content__padding * 2});
+		}
+
+		&.is-style-dots::before {
+			font-size: 36px;
+			font-weight: 800;
+			letter-spacing: 0.55em;
+			margin-left: 19px;
+			top: calc(50% - 28px);
+		}
+	}
+
+	.wp-block-coblocks-pricing-table-item {
+		&__title {
+			font-size: $font__size-sm;
+			margin-bottom: 1em;
+			font-weight: 400;
+		}
+
+		&__currency {
+			font-size: $font__size-sm;
+			position: relative;
+			right: -2px;
+			top: 14px;
+		}
+
+		&__price-wrapper {
+			margin-bottom: 0.75em;
+			margin-left: -10px;
+		}
+
+		&__amount {
+			letter-spacing: -0.05em;
+		}
+
+		&__features {
+			font-size: $font__size-sm;
+			font-weight: 300;
+			margin-bottom: 1.3em;
+			padding-left: 0;
+		}
+
+		.wp-block-button__link {
+			font-family: $font__heading;
+		}
+	}
+
+	.wp-block-coblocks-social {
+		&:not(.has-button-size-sml):not(.has-button-size-lrg) .wp-block-coblocks-social__button {
+			font-size: 15px;
+			padding: 10px 24px 9px;
+		}
+	}
+}

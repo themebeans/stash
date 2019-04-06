@@ -1,0 +1,34 @@
+.entry-content {
+	.wp-block-latest-comments {
+		margin: $content__spacer--mobile + 7px auto $content__spacer--mobile + 5px;
+		padding-left: 0;
+
+		@media screen and (min-width: $content__media-query) {
+			margin-bottom: $content__spacer + 5px;
+			margin-top: $content__spacer + 5px;
+		}
+
+		&.alignwide {
+			@include blockWideDisplay();
+		}
+
+		&__comment {
+			font-size: 17px;
+			margin-bottom: 1.4em !important;
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+		&__comment-date {
+			color: $gray;
+			font-size: 15px;
+			margin-bottom: 0.5em;
+			margin-top: 0.7em;
+		}
+
+		&__comment-excerpt p {
+			font-size: 18px;
+			line-height: 1.6;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+#sprite {
+	@include hide;
+}
+
+.icon {
+	height: 1.4em;
+	width: 1.4em;
+}
+
+.icon-chain {
+	transform: scale(0.6) !important;
+}
+
+.icon-rss {
+	transform: scale(0.6) !important;
+}
+
+.icon-dribbble {
+	transform: scale(1.32) !important;
+}
+
+.icon-wordpress {
+	position: relative;
+	top: 0.05em;
+}
+
+.icon-slack {
+	position: relative;
+	top: 0.029em;
+}
+
+.svg-fallback {
+	display: none;
+
+	.no-svg & {
+		display: inline-block;
+	}
+}
