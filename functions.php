@@ -274,9 +274,9 @@ function stash_setup() {
 	);
 
 	/**
-	 * Filters @@pkg.name array of starter content.
+	 * Filters Stash array of starter content.
 	 *
-	 * @since @@pkg.name 1.0
+	 * @since Stash 1.0
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
@@ -423,7 +423,7 @@ function stash_editor_customizer_colors() {
 /**
  * Remove the duplicate stylesheet enqueue for older versions of the child theme.
  *
- * Since v1.5.0 @@pkg.name has a built-in auto-loader for loading the appropriate
+ * Since v1.5.0 Stash has a built-in auto-loader for loading the appropriate
  * parent theme stylesheet, without the need for a wp_enqueue_scripts function within
  * the child theme. This means that stylesheets will "just work" and there's less chance
  * that users will accidently disrupt stylesheet loading.
