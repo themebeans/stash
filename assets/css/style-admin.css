@@ -1,0 +1,37 @@
+/**
+ * Adds custom styling for the widget media uploaders.
+ */
+.widget-media-container {
+    width: 100%;
+    margin-top: -9px;
+}
+
+.widget-no-image {
+    border: 1px dashed #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.widget-media-inner img {
+    max-width: 100%;
+    border-radius: 2px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.widget-media-url {
+    display: none;
+}
+
+.widget-media-remove {
+    float: left;
+    width: 48%;
+}
+
+.widget-media-upload {
+    float: right;
+    width: 48%;
+}

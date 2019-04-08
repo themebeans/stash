@@ -1,0 +1,198 @@
+** Stash Changelog **
+
+05 April 2019, Version 2.0.5
+	* New: Add support for the new `wp_body_open` hook in WordPress 5.2+
+	* Fix: Adjust Alert block typography control functionality
+	* Tweak: Add proper styling for the new <code> format within the block editor
+
+09 March 2019, Version 2.0.4
+	* Fix: Improve animation of post titles in Chrome
+
+08 March 2019, Version 2.0.3
+	* Tweak: Adjust core Button block styling
+
+06 January 2019, Version 2.0.2
+	* Tweak: Add appropriate blockquote fallback for the Classic editor
+	* Tweak: Improve metabox styling within Gutenberg
+
+05 December 2018, Version 2.0.1
+	* New: Supports WordPress 5.0 🔥
+	* New: Add "Featured Image" image size to the editor
+		- Select the "Featured Image" size from the Image Size option in the main featured image block
+	* Tweak: Custom page/post templates are disabled if featured images are enabled from the Customizer
+	* Tweak: CoBlocks social block style touch-ups
+	* Tweak: Add custom background color fallback color
+	* Tweak: Add proper styling for left/right aligned galleries
+	* Tweak: Remove the Gutenberg plugin from the list of suggested plugins
+
+26 November 2018, Version 2.0.0
+	* New: Full support for Gutenberg and WordPress 5.0
+	* New: Add support for CoBlocks, Gutenberg Blocks for Content Marketers - https://coblocks.com
+	* New: Add support for Block Gallery, photo gallery Gutenberg Blocks - https://wpblockgallery.com
+	* New: Add support for the Merlin WP theme setup wizard 🧙‍♂️
+	* New: Add custom Gutenberg editor color palette
+	* New: Add selected Customizer accent color to the Gutenberg editor color palette
+	* New: Add custom editor font sizes
+	* New: Add support for PHP 7.2
+	* New: Add SVG sprite functionality
+	* New: Enable support for responsive embedded content
+	* New: Add better customizer defaults for improved onboarding
+	* Tweak: Remove single post sidebar layout option
+	* Tweak: Add support for full and wide alignment, if the sidebar is not in use
+	* Tweak: Sidebar now displays if there are widgets in the Sidebar widget area
+	* Tweak: Move existing sidebar below the footer area
+	* Remove: Archive and Site Map templates, as they are now provided by Gutenberg
+	* Remove: Font Awesome dependency in leui of using an SVG sprite
+	* Remove: Ad widget
+	* Remove: Profile widget
+	* Remove: Fitvids.js, as Stash now supports responsive embeds by default
+
+28 December 2017, Version 1.5.0
+	New:
+		* Added the a massive theme framework upgrade with modern coding standards and build scripts in place
+		* Added TGM Plugin Activation support with recommended plugins
+		* Added concated styles and scripts for faster performance 🚀
+		* Added WordPress 4.7- backwards compatibility notice
+		* Added a new license Customizer control for managing your theme license
+		* Added support for core custom logo functionality and auto-migration
+		* Added initial support for the upcoming Gutenberg editor
+		* Added SCSS support with auto browser auto-prefixing
+		* Added minified Customizer JS and editor stylesheet assets with auto-prefixing
+		* Added official beta support for Gutenberg — install the Gutenberg plugin and test it out!
+		* Moved /images/ to /assets/images/
+		* Moved /js/ to /assets/js/
+		* Moved /inc/fonts/ to /assets/fonts/
+		* Improved debug mode that works with minified asset delivery throughout the entire theme
+		* Removed the dashboard license widget (because we have the new Customizer License Key control)
+		* Removed SEO settings, in lieu of Yoast SEO (or another plugin of your choice) [https://wordpress.org/plugins/wordpress-seo]
+
+	Fixes & Updates:
+		* Improved theme updater class
+		* Improved Customizer sanitization functions
+		* Improved theme styles to make them more modern
+		* Improved PHPCS code readability
+		* Conduced a security audit and added recommeded optimizations
+		* Updated comments
+		* Updated child theme
+		* Updated languages
+
+05 December 2017, Version 1.4.5
+	* Fixed output of JetPack's tiled galleries
+
+
+27 July 2016, Version 1.4.4
+	* Minor index header fix
+
+
+27 July 2016, Version 1.4.3
+	* Updated content headers styling
+	* Updated rtl.css
+	* Updated header pingback
+	* Updated feedback module
+	* Updated theme updater
+	* Added proper escaping on translation functions
+	* Minor performance improvements
+	* Updated languages
+
+
+08 July 2016, Version 1.4.2
+	* Fixed gallery customizer option labels
+	* Updated languages
+
+
+07 July 2016, Version 1.4.1
+	* Added option to disable the comments show/hide functionality (NEW)
+	* Fixed Photoswipe gallery on default page error
+	* Improved Customizer performance
+	* Updated languages
+
+
+03 June 2016, Version 1.4.0
+	* Added new post archives template (NEW)
+	   - template-archive.php
+	* Added new site map template (NEW)
+	   - template-site-map.php
+	* Updated Font Awesome icon fonts
+	   - inc/fonts/[all]
+	* Updated the style for an Instagram profile link
+	* Added option to disable default SEO metadata (NEW)
+	* Updated languages
+
+
+26 April 2016, Version 1.3.3
+	* Added new Profile widget (NEW)
+	   - widget-profile.php
+	* Photoswipe update
+	   - Updated the styles, making it more modern and clean
+	* Updated languages
+
+
+21 April 2016, Version 1.3.2
+	* Another Bean Social compatibility update - opps!
+
+
+18 April 2016, Version 1.3.1
+	* Child functionality update
+	* Bean Social compatibility update
+
+
+08 April 2016, Version 1.3.0
+	* WordPress 4.5 updates
+	* Added new advertisement widget (NEW)
+	* Added new embedded video widget (NEW)
+	* General performance improvements
+	* Updated languages
+
+
+25 March 2016, Version 1.2.3
+	* Page sidebar bug fix
+
+
+16 March 2016, Version 1.2.2
+	* Added single post sidebar option (NEW)
+	   - The option is added in the Customizer > Settings > Blog panel
+	* New Single Post widget area
+	* Fixed Twitter header option bug
+	* General performance improvements
+	* Updated languages
+
+
+22 January 2016, Version 1.2.1
+	* Fix safari navigation bug
+
+
+18 January 2016, Version 1.2.0
+	* EDD_Theme_Updater Update
+		- IMPORTANT: DO NOT use the auto-updater to update to this version;
+		  either delete your local theme, then re-upload this one, or
+		  copy this version directly into your wp-content/themes folder
+	* Updated languages
+
+
+18 January 2016, Version 1.1.1
+	* Updated stash_retina_logo function
+
+
+17 January 2016, Version 1.1.0
+	* Added new header search bar	(NEW)
+	* Added search.php (NEW)
+	* Added new retina logo Customizer option
+	* Added an option to only show the first image in a lightbox gallery
+	* Fixed post and page pagination styles
+	* Fixed article button format styles
+	* Improved & organized Customizer sections
+	* Improved sprite image performance
+	* Improved OG and Twitter Card performance
+	* Updated Customizer sanitization functions
+	* Updated Feedback class UI
+	* Updated languages
+
+
+28 December 2015, Version 1.0.1
+	* Added Customizer option to disable fullscreen featured images
+	* Updated Feedback class
+	* Updated languages
+
+
+27 December 2015, Version 1.0.0
+	* Initial release
