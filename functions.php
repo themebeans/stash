@@ -769,3 +769,8 @@ require get_parent_theme_file_path( '/inc/admin/init.php' );
  * Disable Dashboard Doc.
  */
 function themebeans_guide() {}
+
+/**
+ * Disable Merlin WP.
+ */
+function themebeans_merlin() {}
