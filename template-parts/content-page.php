@@ -39,7 +39,7 @@
 
 	<?php
 	// Sidebar widget area.
-	if ( is_active_sidebar( 'sidebar-6' ) ) {
+	if ( !is_front_page() && is_active_sidebar( 'sidebar-6' ) ) {
 		?>
 		<aside class="widget-area widget-area--sidebar">
 			<?php dynamic_sidebar( 'sidebar-6' ); ?>

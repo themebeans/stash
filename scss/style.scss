@@ -2289,18 +2289,17 @@ p:empty {
 
 .search-form {
 	margin-top: 30px;
+	display: flex;
+	flex-flow: row;
 }
 
 .search-form input[type="search"] {
 	border-radius: 4px 0 0 4px;
-	float: left;
-	width: 78%;
 }
 
 .search-form input[type="submit"] {
 	border-radius: 0 4px 4px 0;
-	float: left;
-	width: 22%;
+	width: 50%;
 }
 
 @media screen and (max-width: 767px) {
